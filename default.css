@@ -1,0 +1,45 @@
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+/* .maincontent{
+    padding-top: 100px;
+   
+
+} */
+#home{
+    background-color: aqua;
+    height: 150vh;
+    text-align: center;
+    color: white;
+    
+}
+#about{
+    background-color: blue;
+    height: 150vh;
+}
+#contact{
+    height: 150vh;
+    background-color: white;
+}
+#connect{
+    height: 150vh;
+    background-color: blueviolet;
+}
+.menuwrap{
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.maincontent{
+    margin-left: 15%;
+    
+  
+    width: 85%;
+    
+
+}

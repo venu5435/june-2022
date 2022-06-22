@@ -1,0 +1,50 @@
+#main{
+    background-color: brown;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    position: fixed;
+    
+}
+#mainheader{
+    height: 100px;
+}
+li{
+    display: inline-block;
+    margin-right: 5px;
+    height: 100px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.logo{
+    width: 15%;
+    text-align: center;
+    padding: 3px;
+    height: 100px;
+  line-height: 100px;
+   color: white;
+}
+
+.menuitems{
+    text-decoration: none;
+   
+   width: 80%;
+   height: 100px;
+   line-height: 100px;
+    
+}
+.menuwrap{
+    width: 350px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
