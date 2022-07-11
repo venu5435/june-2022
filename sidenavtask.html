@@ -10,6 +10,10 @@
         .{
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
+}
+.body{
+    height: 100vh;
 }
 .head{
     width: 25%;
@@ -17,6 +21,7 @@
     overflow-y:scroll;
     height: 100vh;
     position: fixed;
+
     
 }
 .logo .nav .social {
@@ -76,7 +81,7 @@
    .container{
     width: 75%;
     float: right;
-    background-image: url(bg.jpg);
+    background-image: url(/june-2022/june-2022/Images/bg.jpg);
     background-size: cover;
     height: 150vh;
     z-index: 0;
@@ -84,18 +89,32 @@
     
 }
 .box{
-    width: 300px;
-    height: 300px;
-    border: 1px solid white;
-    border-radius: 50%;
+   width: 300px;
+   height: 300px;
     overflow:hidden;
     margin: auto;
+    position: relative;
+    margin-top: auto;
+    left: 50px;
+}
+.image{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 50%;;
+    position: absolute;
+    align-items: center;
+    margin: 80px 0px 100px 0px;
+    margin-left: auto;
+   
 }
 .heading .para{
     z-index: 1;
 }
-.box image{
+.box .image{
     z-index: 1;
+
+
 }
 .heading h1 , h4{
     text-align: center;
@@ -119,6 +138,10 @@
 
 
 
+}
+.image{
+    width: 200px;
+    height: 200px;
 }
 
    </style>
@@ -146,22 +169,22 @@
         <ul class="social">
             <a href="#">
         
-                <li><img src="icons8-instagram-15.png" alt=""></li>
+                <li><img src="/june-2022/june-2022/Images/icons8-instagram-15.png" alt=""></li>
             </a>
             <a href="#">
-                <li><img src="icons8-google-plus-15.png" alt=""></li>
+                <li><img src="/june-2022/june-2022/Images/icons8-google-plus-15.png" alt=""></li>
             </a>
         <a href="#">
-                <li><img src="icons8-facebook-15.png" alt=""></li>
+                <li><img src="/june-2022/june-2022/Images/icons8-facebook-15.png" alt=""></li>
             </a>
              </ul>
         </ul>
     </div>
     <div class="container">
       <div class="box">
-        <div class="image">
-            <image src="author.jpg"></image>
-        </div>
+        
+            <image src="/june-2022/june-2022/Images/author.jpg" class="image" alt="author"></image>
+        
       </div>
            
 
