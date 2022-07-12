@@ -10,15 +10,16 @@
     <title>Document</title>
     
     <style>
-        
-        body{
+        *{
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-
         }
+        
+    
 .sitetop{
     display: inline-block;
-    width: 80%;
+    width: 100%;
     padding: 5%;
     margin-left: auto;
     color: white;
@@ -42,7 +43,7 @@
     justify-content: space-around;
     padding: 5px;
     margin:15px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
  float:right;
  margin-bottom: 15px;
@@ -63,6 +64,7 @@
 .container{
     width: 100%;
     height: 200px;
+    align-items: center;
 
 }
 .row{
@@ -101,12 +103,12 @@ button{
 .posts{
     width: 100%;
     margin-top: 35px;
-   
-    background-image: url(bg.jpg);
+    padding-top: 50px;
+    background-image: url(/june-2022/june-2022/Images/bg.jpg);
     background-repeat:repeat;
-    background-size: contain;
-    box-sizing: border-box;
-    height: 250vh;
+    background-size: cover;
+  padding-bottom: 50px;
+   
     
 }
 
@@ -115,40 +117,128 @@ button{
 
     position: relative;
     margin-left: 40px;
+    align-items: center;
  
   
     
     
 }
 
-.image, .image1, .image2{
-    margin-left: 10px;
-    margin-bottom: 20px;
 
 
 
-}
+
+
 .gallery img{
     height: auto;
-    width: 400px;
-    border: 5px solid white;
-    margin: 5px;
-
-    
-  
-
-}
-.gallery img:hover{
-    transform: scale(1.1,1.1);
+    width: 100%;
+    border: 3px solid white;
+   }
+   .gallery img:hover{
+    border: 3px solid black;
+   }
+.images:hover .overlay{
+    /* transform: scale(1.1,1.1);
     animation-duration: 3s;
-    transition: ease-in-out;
-   
+    transition: ease-in-out; */
+  
+    opacity: 0.8;
 }
 strong{
     font-size: 50px;
 }
+.images {
+display: inline-block;
+width: 30%;
+position: relative;
+margin-left: 20px;
+overflow: hidden;
 
 
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+.box{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
+/* background-color: black; */
+color: white;
+
+ width: 100%;
+}
+.container:hover .overlay { 
+    opacity: 0.8;
+}
+
+.box span{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+.box a{
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+    z-index: 1;
+    font-weight: 500;
+    /* padding: 10px; */
+
+
+}
+a:link{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* Footer */
+
+.footer{
+    height: 200px;
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+.icons{
+    position: absolute;
+    left:45%;
+    top: 10%; 
+    align-content: center;
+    color: aliceblue;
+    
+}
+.copy{
+    position: absolute;
+    top: 50%;
+  text-align: center;
+    width: 100%;
+
+}
 
     </style>
 </head>
@@ -162,11 +252,11 @@ strong{
             </div>
            
           
-            <div class="icons">
+            <div class="icons1">
                 <ul class="social">
-                   <li><img src="icons8-instagram-15.png" alt=""></li>
-                   <li><img src="icons8-google-plus-15.png" alt=""></li>
-                   <li><img src="icons8-facebook-15.png" alt=""></li>
+                   <li><img src="/june-2022/june-2022/Images/icons8-instagram-15.png" alt=""></li>
+                   <li><img src="/june-2022/june-2022/Images/icons8-google-plus-15.png" alt=""></li>
+                   <li><img src="/june-2022/june-2022/Images/icons8-facebook-15.png" alt=""></li>
                 </ul>
             </div>
             </div>
@@ -195,37 +285,154 @@ strong{
     <div class="posts">
         <div class="containerbox">
             <div class="gallery">
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/1.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle one</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/2.jpg" class="image" alt="">
+                 
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle two</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
                 
                    
-                    <img src="1.jpg" class="image" alt="">
-                 
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/3.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle three</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/4.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle four</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/5.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                           <span>25th June</span><br>
+                            <a href="">Tittle five</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/6.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle six</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/7.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle seven</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/8.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle eight</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                    
+                <div class="images">
+                    <img src="/june-2022/june-2022/Images/9.jpg" class="image" alt="">
+
+                    <div class="overlay">
+                        <div class="box">
+                            <h6>25th june</h6>
+                            <a href="">Tittle nine</a>
+
+                            <p>lorem</p>
+                        </div>
+                       
+                    </div>
+                </div>
              
                     
                 
                 
-                    <img src="2.jpg" class="image" alt="">
-                
-                
-                    <img src="3.jpg"  class="image" alt="">
-                
-                
-                 
-                    
-               
-                    <img src="5.jpg" class="image2 alt="">
-                    <img src="4.jpg"  class="image2 alt="">
-                
-                    <img src="6.jpg" class="image2  alt="">
-            
-                
-                    <img src="7.jpg" class="image3" alt="">
-                
-                    <img src="8.jpg" class="image3" alt="">
-                
-                    <img src="9.jpg" class="image3" alt="">
                 
                
             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="icons">
+            <ul class="social">
+                <li><img src="/june-2022/june-2022/Images/icons8-instagram-15.png" alt=""></li>
+                <li><img src="/june-2022/june-2022/Images/icons8-google-plus-15.png" alt=""></li>
+                <li><img src="/june-2022/june-2022/Images/icons8-facebook-15.png" alt=""></li>
+             </ul>
+
+        </div>
+        <div class="copy">
+            Copyright © 2084 Company Name | Design: template mo | Photos: Unsplash
         </div>
     </div>
 </body>
